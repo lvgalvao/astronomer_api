@@ -33,7 +33,7 @@ default_args={
 
 @dag(
     default_args=default_args,
-    schedule="0 0 * * *",
+    schedule="* * * * *",
     start_date=pendulum.from_format("2024-03-23", "YYYY-MM-DD").in_tz("UTC"),
     catchup=False,
     owner_links={
